@@ -27,7 +27,15 @@
   <body>
     <img src="img_la.jpg" alt="LA" style="width: 100%" />
 
-    <div id="time-filter"></div>
+    <div id="time-filter">
+      <button>Today</button>
+      <button>This Week</button>
+      <button>This Month</button>
+      <input type="datetime-local" id="datetime-filter"
+       name="task-time" value="2022-04-01T00:00"
+       min="0000-01-01T00:00" max="2099-12-31T00:00">
+    </div>
+
     <div id="add-field"></div>
     <section class="container">
       <div class="row w-100 d-flex align-items-center flex-column mx-auto">
@@ -53,7 +61,15 @@
       </div>
     </section>
 
-    <div id="category-filter"></div>
+    <div id="category-filter">
+      <button>All</button>
+      <button>Private</button>
+      <button>Work</button>
+      <button>Completed</button>
+      <button>Open</button>
+      
+    </div>
+
     <script src="tasklist.js" defer></script>
   </body>
 </html>
