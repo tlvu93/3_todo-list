@@ -1,1 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 
+.login-container{
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.app .ap{
+    align-items: center;
+    padding-left: 180px;
+    font-size: 30px;
+    
+}
+
+.apps .ap{
+    padding-left: 170px;
+    font-size: 30px;
+}
+
+ div p a { color: black;}
