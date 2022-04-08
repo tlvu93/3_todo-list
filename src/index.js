@@ -2,13 +2,13 @@ const defaultTasks = ["Homework", "Shopping", "Learning CS", "Create a todo list
 
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    let taskList = document.getElementById("task-list")
+  let taskList = document.getElementById("task-list")
 
-    defaultTasks.forEach(task => {
+  defaultTasks.forEach(task => {
 
 
-        const listItem = document.createElement("div")
-        listItem.innerHTML = `<li class="list-group-item">
+    const listItem = document.createElement("div")
+    listItem.innerHTML = `<li class="list-group-item">
         <div class="form-check d-flex align-items-center justify-content-between">
           <div>
             <input
@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         </div>
       </li>`
 
-        taskList.appendChild(listItem)
-    })
+    taskList.appendChild(listItem)
+  })
 });
+
+
