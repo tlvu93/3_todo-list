@@ -4,6 +4,21 @@ function removeTask(event) {
   event.parentNode.parentNode.parentNode.remove();
 }
 
+function checkTask (event) {
+  // Get the checkbox
+  let checkBox = event;
+  let textStyle = event.parentElement.children[1].style;
+  // If the checkbox is checked, line-through effect
+  if (checkBox.checked == true) {
+    
+    textStyle.textDecoration = "line-through";
+  } else {
+    textStyle.textDecoration = "";
+  }
+}
+
+
+
 // Adding a Task (li element) to the task-list
 function addTask() {
   let taskList = document.getElementById("task-list");
