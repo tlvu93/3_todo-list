@@ -34,3 +34,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         taskList.appendChild(listItem)
     })
 });
+
+
+  let strikethrough = document.getElementsByClassName('list-group-item');
+  strikethrough.onclick = function() { 
+    strikethrough.parentNode.parentNode.parentNode.style.setProperty("text-decoration", "line-through");
+  };
+
