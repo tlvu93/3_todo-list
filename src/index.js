@@ -19,8 +19,11 @@ function checkTask (event) {
 
 
 
+
+
 // Adding a Task (li element) to the task-list
 function addTask() {
+  let taskText = document.getElementById("addTaskBox");
   let taskList = document.getElementById("task-list");
 
   var li = document.createElement("div");
@@ -35,10 +38,11 @@ function addTask() {
         type="checkbox"
         value=""
         id="flexCheckDefault"
+        onclick="checkTask(this)"
       />
 
       <label class="form-check-label" for="flexCheckDefault">
-        task
+        ${taskText.value}
       </label>
     </div>
 
@@ -59,5 +63,6 @@ function addTask() {
 </li>`;
 
   taskList.appendChild(li);
+  taskText.value = '';
 }
 
