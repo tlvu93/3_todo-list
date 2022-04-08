@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.login-container{
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.app .ap{
+    align-items: center;
+    padding-left: 180px;
+    font-size: 30px;
+    
+}
+
+.apps .ap{
+    padding-left: 170px;
+    font-size: 30px;
+}
+
+ div p a { color: black;}
+
+
+ button {
+    background-color: #4CAF50; /* Green */
+    border: 1px black solid;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 1em;
+}
+
+#datetime-filter {
+    margin: 1em;
+    padding: 12px 25px;
+}
+
+/* bootstrap searchbar */ 
+.form {
+    position: relative;
+    margin: 1em;
+}
+
+.form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af
+}
+
+.form span {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db
+}
+
+.left-pan {
+    padding-left: 7px
+}
+
+.left-pan i {
+    padding-left: 10px
+}
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none
+}

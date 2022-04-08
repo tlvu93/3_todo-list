@@ -27,7 +27,41 @@
   <body>
     <img src="img_la.jpg" alt="LA" style="width: 100%" />
 
-    <div id="time-filter"></div>
+    <div class="container" id="searchbar">
+      <div class="row height d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center" id="time-filter">
+          <button>Today</button>
+          <button>This Week</button>
+          <button>This Month</button>
+          <input
+            type="datetime-local"
+            id="datetime-filter"
+            name="task-time"
+            value="2022-04-01T00:00"
+            min="0000-01-01T00:00"
+            max="2099-12-31T00:00"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap searchbar -->
+    <div class="container" id="searchbar">
+      <div class="row height d-flex justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="form">
+            <i class="fa fa-search"></i>
+            <input
+              type="text"
+              class="form-control form-input"
+              placeholder="Search anything..."
+            />
+            <span class="left-pan"><i class="fa fa-microphone"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="add-field"></div>
     <section class="container">
       <div class="row w-100 d-flex align-items-center flex-column mx-auto">
@@ -90,7 +124,16 @@
       </div>
     </section>
 
-    <div id="category-filter"></div>
-    <script src="tasklist.js" defer></script>
+    <div class="container" id="searchbar">
+      <div class="row height d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center" id="category-filter">
+          <button>All</button>
+          <button>Private</button>
+          <button>Work</button>
+          <button>Completed</button>
+          <button>Open</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
