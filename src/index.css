@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#time-filter {
+  
+  padding: 10px;
+}
+
+#searchbar {
+ 
+  padding: 10px;
+}
+
+#category {
+  padding: 20px;
+}
+
+Button {
+  margin: 20px;
+}
