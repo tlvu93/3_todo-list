@@ -65,7 +65,7 @@ const TaskList = () => {
 
   const [taskDescription, setDescription] = useState("");
 
-  const addTask = () => {
+  const handleAdd = () => {
     const unique_id = uuid();
 
     const data = {
@@ -77,7 +77,7 @@ const TaskList = () => {
     setDescription("");
   };
 
-  const deleteTask = (id) => {
+  const handleDelete = (id) => {
     let objectToDelete = tasks.find((task) => task.id === id);
     const filteredArray = tasks.filter((task) => task !== objectToDelete);
     setTasks(filteredArray);
@@ -94,11 +94,12 @@ const TaskList = () => {
     setTasks(newTasks);
   };
 
+  // Components
   const taskItems = tasks.map((task) => (
     <TaskEntry
       key={task.id}
       data={task}
-      deleteTask={deleteTask}
+      deleteTask={handleDelete}
       handleCheck={handleCheck}
     />
   ));
@@ -113,7 +114,7 @@ const TaskList = () => {
           value={taskDescription}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <Button className="border" variant="success" onClick={addTask}>
+        <Button className="border" variant="success" onClick={handleAdd}>
           <FontAwesomeIcon icon={faAdd} />
         </Button>
       </Stack>

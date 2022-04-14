@@ -1,11 +1,17 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TaskList from './component/TaskList'
+import Searchbar from './component/Searchbar';
+import {
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      {/* <Container id="time-filter">
+      <Container id="time-filter">
         <Row className="justify-content-md-center">
           <Col xs lg="auto">
             <button>Today</button>
@@ -21,18 +27,18 @@ function App() {
             />
           </Col>
         </Row>
-      </Container> */}
-      {/* <Container id="searchbar">
+      </Container>
+      <Container id="searchbar">
         <Row className="justify-content-md-center">
           <Col xs lg="auto">
             <Searchbar />
           </Col>
         </Row>
-      </Container> */}
+      </Container>
 
       <TaskList />
 
-      {/* <Container id="category">
+      <Container id="category">
         <Row className="justify-content-md-center">
           <Col xs lg="auto">
             <button>All</button>
@@ -42,7 +48,7 @@ function App() {
             <button>Open</button>
           </Col>
         </Row>
-      </Container> */}
+      </Container>
 
     </div>
   );
