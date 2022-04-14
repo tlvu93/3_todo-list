@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import {Container, Row, Col} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Searchbar from './component/Searchbar'
 import TaskList from './component/TaskList'
-import Stack from 'react-bootstrap/Stack'
+
 function App() {
   return (
     <div className="App">
-      <Container id="time-filter">
-        <Row className="justify-content-md-center"> 
+      {/* <Container id="time-filter">
+        <Row className="justify-content-md-center">
           <Col xs lg="auto">
             <button>Today</button>
             <button>This Week</button>
@@ -24,19 +21,19 @@ function App() {
             />
           </Col>
         </Row>
-      </Container>
-      <Container id="searchbar">
-        <Row className="justify-content-md-center"> 
+      </Container> */}
+      {/* <Container id="searchbar">
+        <Row className="justify-content-md-center">
           <Col xs lg="auto">
-            <Searchbar/>
+            <Searchbar />
           </Col>
         </Row>
-      </Container>
-      
-      <TaskList/>
+      </Container> */}
 
-      <Container id="category">
-        <Row className="justify-content-md-center"> 
+      <TaskList />
+
+      {/* <Container id="category">
+        <Row className="justify-content-md-center">
           <Col xs lg="auto">
             <button>All</button>
             <button>Private</button>
@@ -45,7 +42,7 @@ function App() {
             <button>Open</button>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
     </div>
   );
